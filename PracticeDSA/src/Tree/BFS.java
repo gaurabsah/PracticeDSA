@@ -29,19 +29,19 @@ public class BFS {
 
         queue.offer(root);
         while (!queue.isEmpty()){
-            int size = queue.size();
+            int levelSize = queue.size();
             List<Integer> subList = new LinkedList<>();
+            for (int i = 0; i < levelSize; i++) {
+                TreeNode temp = queue.poll();
+                subList.add(temp.value);
 
-            for (int i=0;i<size;i++){
-                if (queue.peek().left != null){
-                    queue.offer(queue.peek().left);
+                if (temp.left != null) {
+                    queue.offer(temp.left);
                 }
 
-                if (queue.peek().right != null){
-                    queue.offer(queue.peek().right);
+                if (temp.right != null) {
+                    queue.offer(temp.right);
                 }
-
-                subList.add(queue.poll().value);
             }
 
             traversalList.add(subList);
