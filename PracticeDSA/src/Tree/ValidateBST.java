@@ -16,7 +16,7 @@ public class ValidateBST {
     }
 
     static boolean isValidate(TreeNode root){
-
+        return false;
     }
 
     public static void main(String[] args) {
