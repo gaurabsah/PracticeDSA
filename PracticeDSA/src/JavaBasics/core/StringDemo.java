@@ -1,4 +1,4 @@
-package JavaBasics;
+package JavaBasics.core;
 
 public class StringDemo {
     public static void main(String[] args) {

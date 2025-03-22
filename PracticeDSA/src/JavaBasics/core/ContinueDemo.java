@@ -1,15 +1,15 @@
-package JavaBasics;
+package JavaBasics.core;
 
-public class BreakDemo {
+public class ContinueDemo {
     public static void main(String[] args) {
         String[] arr = {"abc",null,"xyz"};
 
         for (String ans : arr) {
             if (ans == null){
-                break;
+                continue;
             }
 
-            System.out.println(ans); // abc
+            System.out.println(ans); // abc, xyz
         }
     }
 }

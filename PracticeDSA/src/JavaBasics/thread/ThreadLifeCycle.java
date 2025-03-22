@@ -1,4 +1,4 @@
-package JavaBasics;
+package JavaBasics.thread;
 
 public class ThreadLifeCycle extends Thread{
     public void run(){

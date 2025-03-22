@@ -1,18 +1,19 @@
-package JavaBasics;
+package JavaBasics.collection;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Objects;
 
-class Student implements Comparable<Student>{
+class Students implements Comparator<Students> {
     private String name;
     private int age;
 
-    public Student(){
+    public Students(){
 
     }
 
-    public Student(String name, int age){
+    public Students(String name, int age){
         this.name = name;
         this.age = age;
     }
@@ -34,10 +35,15 @@ class Student implements Comparable<Student>{
     }
 
     @Override
+    public int compare(Students o1, Students o2) {
+        return 0;
+    }
+
+    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Student student = (Student) o;
+        Students student = (Students) o;
         return age == student.age && Objects.equals(name, student.name);
     }
 
@@ -54,18 +60,15 @@ class Student implements Comparable<Student>{
                 '}';
     }
 
-    @Override
-    public int compareTo(Student o) {
-        return 0;
-    }
 }
-public class ComparableInterfaceDemo {
+
+public class ComparatorInterfaceDemo {
     public static void main(String[] args) {
-        List<Student> list = new ArrayList<>();
-        Student student = new Student("Gaurab",27);
-        Student student3 = new Student("Ayush",10);
-        Student student1 = new Student("Saurab",24);
-        Student student2 = new Student("Ashish",16);
+        List<Students> list = new ArrayList<>();
+        Students student = new Students("Gaurab",27);
+        Students student3 = new Students("Ayush",10);
+        Students student1 = new Students("Saurab",24);
+        Students student2 = new Students("Ashish",16);
 
         list.add(student);
         list.add(student1);

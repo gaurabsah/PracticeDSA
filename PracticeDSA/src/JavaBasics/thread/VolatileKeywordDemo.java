@@ -1,4 +1,4 @@
-package JavaBasics;
+package JavaBasics.thread;
 
 class SharedResources {
     private volatile boolean running = true; // Ensures visibility

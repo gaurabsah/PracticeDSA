@@ -1,4 +1,4 @@
-package JavaBasics;
+package JavaBasics.oops;
 
 interface Animal1{
 //    constants are by default public static final

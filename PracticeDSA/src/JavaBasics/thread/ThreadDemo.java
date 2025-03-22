@@ -1,4 +1,4 @@
-package JavaBasics;
+package JavaBasics.thread;
 
 public class ThreadDemo extends Thread{
     public void run(){

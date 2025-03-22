@@ -1,4 +1,4 @@
-package JavaBasics;
+package JavaBasics.core;
 
 public class FinalKeywordDemo {
 //    static final int staticVar;  // Compilation error - should be initialized if final

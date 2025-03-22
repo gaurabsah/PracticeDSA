@@ -1,4 +1,4 @@
-package JavaBasics;
+package JavaBasics.core;
 
 public class StaticVariableDemo {
     static int x;

@@ -1,4 +1,4 @@
-package JavaBasics;
+package JavaBasics.thread;
 class SharedResource {
     private int data;
     private boolean available = false;

@@ -1,4 +1,4 @@
-package JavaBasics;
+package JavaBasics.thread;
 
 class Pen {
     public synchronized void writeWithPenAndPaper(Paper paper) {

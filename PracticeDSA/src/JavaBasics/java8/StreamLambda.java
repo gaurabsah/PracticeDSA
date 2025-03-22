@@ -1,4 +1,4 @@
-package JavaBasics;
+package JavaBasics.java8;
 
 import java.util.*;
 import java.util.stream.Collectors;

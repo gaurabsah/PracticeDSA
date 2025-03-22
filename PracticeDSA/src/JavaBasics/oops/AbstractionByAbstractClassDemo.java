@@ -1,4 +1,4 @@
-package JavaBasics;
+package JavaBasics.oops;
 
 abstract class Vehicle{
     abstract void wheel();

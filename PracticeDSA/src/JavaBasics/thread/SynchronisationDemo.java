@@ -1,4 +1,4 @@
-package JavaBasics;
+package JavaBasics.thread;
 class Counter{
     private int count;
 
