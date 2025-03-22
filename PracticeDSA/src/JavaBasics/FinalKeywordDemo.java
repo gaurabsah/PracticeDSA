@@ -12,7 +12,7 @@ public class FinalKeywordDemo {
         x=0;
         int y = x+2;
 //        x=y+3;   // compilation error because x is final
-        System.out.println(x); // 5
+        System.out.println(x); // 0
 
         System.out.println(staticVar);
 //        staticVar = 20;  // compilation error because of final

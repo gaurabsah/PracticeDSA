@@ -1,24 +1,18 @@
 package JavaBasics;
 
 class MethodOverloading{
-    double a;
-    double b;
-    public MethodOverloading(){
-
+//    double a;
+//    double b;
+    public int methodOverloading(int a, int b){
+        return a+b;
     }
 
-    public MethodOverloading(int age){
-        this.a=age;
+    public int methodOverloading(int a, int b, int x){
+        return a+b+x;
     }
 
-    public MethodOverloading(int age,int marks){
-        this.a=age;
-        this.b=marks;
-    }
-
-    public MethodOverloading(double age,double marks){
-        this.a=age;
-        this.b=marks;
+    public double methodOverloading(double age,double marks){
+        return marks - age;
     }
 }
 

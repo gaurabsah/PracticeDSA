@@ -65,11 +65,13 @@ public class StreamLambda {
         System.out.println(sortedListDesc);
 
 //        Find the sum of all numbers
-        int sumOfAllNumber = numbers.stream().reduce(0, Integer::sum);
-        System.out.println(sumOfAllNumber);
+        int sumOfAllNumber = numbers.stream().
+                mapToInt(Integer::intValue).sum();
+//                reduce(0, Integer::sum);
+        System.out.println("sumOfAllNumber"+sumOfAllNumber);
 
 //        Find the maximum and minimum number
-        int max = numbers.stream().reduce(Integer.MIN_VALUE, Integer::max);
+        int max = numbers.stream().reduce(Integer.MIN_VALUE, (a,b)->Math.max(a,b));
         System.out.println(max);
 
         int min = numbers.stream().reduce(Integer.MAX_VALUE, Integer::min);

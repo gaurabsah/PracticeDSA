@@ -1,6 +1,10 @@
 package JavaBasics;
 
 interface Animal1{
+//    constants are by default public static final
+    int x = 9;
+
+//    methods are by default public abstract
     void sound();
     void eat();
 

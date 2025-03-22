@@ -7,7 +7,7 @@ package Array;
 public class KadanesAlgorithm {
 
     public static int maxSubArraySum(int[] arr){
-        int result = 0;
+        int result = Integer.MIN_VALUE;
         int maxEnding = 0;
 
         for (int i = 0; i < arr.length; i++) {
