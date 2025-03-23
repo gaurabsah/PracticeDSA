@@ -1,10 +1,18 @@
 package JavaBasics.collection;
 
 import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
 
-public class HashMapDemo {
+/*
+FOCUS: insertion order, duplicate value, null value, when to use
+ */
+
+public class MapDemo {
     public static void main(String[] args) {
         Map<String,String> map = new HashMap<>();
+//        Map<String,String> map = new TreeMap<>();
+//        Map<String,String> map = new LinkedHashMap<>();
+//        Map<String,String> map = new ConcurrentHashMap<>();
         map.put("one","Gaurab");
         map.put("two","Saurab");
         map.put("three","Ashish");

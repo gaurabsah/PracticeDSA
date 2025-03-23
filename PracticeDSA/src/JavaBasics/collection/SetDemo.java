@@ -4,6 +4,10 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.TreeSet;
 
+/*
+FOCUS: insertion order, duplicate value, null value, when to use
+ */
+
 public class SetDemo {
     public static void main(String[] args) {
 //        Set<Integer> ages = new HashSet<>();
